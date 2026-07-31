@@ -128,7 +128,7 @@ footer {
 ========================= */
 .navbar {
   width: 90%;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 20px auto;
   padding: 18px 25px;
   display: flex;
@@ -207,8 +207,8 @@ footer {
 
 .hero {
   width: 90%;
-  max-width: 1150px;
-  min-height: 85vh;
+  max-width: 2000px;
+  min-height: 60vh;
   margin: auto;
   display: flex;
   align-items: center;
@@ -442,6 +442,8 @@ color: white;
 ========================= */
 
 .about {
+  width: 90%;
+  margin:auto;
   padding-top: 100px;
 }
 
@@ -450,6 +452,7 @@ color: white;
   font-size: 14px !important;
   font-weight: 700;
   letter-spacing: 3px;
+  margin: 20px;
   margin-bottom: 12px !important;
 }
 
@@ -481,9 +484,7 @@ color: white;
 
 .about-info {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 15px;
 }
 
@@ -525,22 +526,20 @@ color: white;
 ========================= */
 
 .skills-section {
+  width: 90%;
+  margin: auto;
   padding-top: 100px;
 }
 
 .skills-heading {
   max-width: 700px;
-
   margin-bottom: 50px;
 }
 
 .skills-heading h2 {
   font-size: clamp(35px, 5vw, 60px);
-
   line-height: 1.1;
-
   margin-bottom: 20px;
-
   color: white;
 }
 
@@ -550,44 +549,28 @@ color: white;
 
 .skills-heading > p:last-child {
   color: #888;
-
   line-height: 1.7;
-
   font-size: 16px;
 }
 
-
 /* Skills Grid */
-
 .skills-grid {
   display: grid;
-
   grid-template-columns:
     repeat(3, 1fr);
-
   gap: 18px;
 }
 
-
 /* Skill Card */
-
 .skill-card {
   min-height: 150px;
-
   padding: 25px;
-
   display: flex;
-
   flex-direction: column;
-
   justify-content: space-between;
-
   background: #0d0d0d;
-
   border: 1px solid #252525;
-
   border-radius: 15px;
-
   transition:
     transform 0.3s ease,
     border-color 0.3s ease,
@@ -596,9 +579,7 @@ color: white;
 
 .skill-card:hover {
   transform: translateY(-7px);
-
   border-color: #8b5cf6;
-
   background: #111;
 }
 
@@ -607,31 +588,23 @@ color: white;
 
 .skill-number {
   color: #555;
-
   font-size: 13px;
-
   font-weight: 600;
-
   letter-spacing: 2px;
 }
-
 
 /* Skill Name */
 
 .skill-card h3 {
   color: white;
-
   font-size: 21px;
-
   margin-bottom: 7px;
 }
-
 
 /* Category */
 
 .skill-card p {
   color: #777;
-
   font-size: 13px;
 }
 
@@ -648,7 +621,6 @@ color: white;
 }
 
 @media (max-width: 500px) {
-
   .skills-grid {
     grid-template-columns: 1fr;
   }
@@ -657,8 +629,21 @@ color: white;
 /* ================================
    9. PROJECTS
 ================================ */
-
+.section{
+    width: 90%;
+  margin: auto;
+  padding-top: 50px;
+}
+.sectionh2{
+  color:  #8b5cf6;
+   font-size: 30px !important;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
 .projects {
+  width: 90%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
@@ -898,14 +883,12 @@ color: white;
 
 .footer {
   border-top: 1px solid #222;
-
   padding: 50px 5% 25px;
-
   background: #080808;
 }
 
 .footer-content {
-  max-width: 1150px;
+  max-width: 2000px;
   margin: auto;
   display: flex;
   justify-content: space-between;

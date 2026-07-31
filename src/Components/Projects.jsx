@@ -9,7 +9,7 @@ function Projects() {
   return ( 
     <>
       <section id="projects" className="section"> 
-        <h2>Projects</h2>
+        <h2 className='sectionh2'>Projects</h2>
          <p className="section-description"> Here are some of the projects and technical work I have developed while building my skills in full-stack development, cybersecurity and problem solving. </p> 
          <div className="projects"> {projects.map((project) => ( <div className="project-card" key={project.title}>
             <h3> {project.title} </h3> 

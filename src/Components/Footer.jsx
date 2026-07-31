@@ -8,11 +8,11 @@ function Footer() {
         <div>
 
           <a href="#home" className="footer-logo">
-            Santhosh<span>GP</span>
+            Santhosh <span>G P</span>
           </a>
 
           <p>
-            Full Stack Developer
+            Software Developer
           </p>
 
         </div>
