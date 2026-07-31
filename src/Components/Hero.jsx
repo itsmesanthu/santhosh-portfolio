@@ -15,7 +15,7 @@ function Hero() {
         </h1>
 
         <h2>
-          Full Stack Developer
+          Software Developer 
         </h2>
 
         <p className="hero-description">

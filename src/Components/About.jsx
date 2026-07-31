@@ -38,14 +38,14 @@ function About() {
           <div className="info-card">
             <h3>Education</h3>
             <p>
-              Computer Science & Engineering
+           Bachelor of Engineering in Computer Science and Engineering
             </p>
           </div>
 
           <div className="info-card">
             <h3>Focus</h3>
             <p>
-              Full Stack Development
+            software devloveper
             </p>
           </div>
 
@@ -59,7 +59,7 @@ function About() {
           <div className="info-card">
             <h3>Currently Learning</h3>
             <p>
-              React & Advanced Development
+             Python,JavaScript,HTML,CSS,Django, React & Advanced Development
             </p>
           </div>
 
