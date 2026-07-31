@@ -19,10 +19,8 @@ function Hero() {
         </h2>
 
         <p className="hero-description">
-          I build modern, responsive and user-friendly web
-          applications using React, JavaScript, HTML and CSS.
-          I also enjoy solving Data Structures and Algorithms
-          problems.
+Building ideas into impactful software. 🚀
+Full Stack Developer | Python | Django | React | DSA | SQL
         </p>
 
         <div className="hero-buttons">
