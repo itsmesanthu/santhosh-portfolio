@@ -11,7 +11,7 @@ function Hero() {
         </p>
 
         <h1>
-          Santhosh <span>GP</span>
+          Santhosh <span>G P</span>
         </h1>
 
         <h2>
