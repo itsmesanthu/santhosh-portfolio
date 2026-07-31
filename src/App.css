@@ -853,19 +853,15 @@ color: white;
 
 .contact-section {
   padding-top: 120px;
-
   padding-bottom: 120px;
-
   text-align: center;
 }
 
 .contact-section h2 {
+  color: wheat;
   max-width: 800px;
-
   margin: 0 auto 25px;
-
   font-size: clamp(40px, 6vw, 70px);
-
   line-height: 1.05;
 }
 
@@ -875,29 +871,21 @@ color: white;
 
 .contact-description {
   max-width: 650px;
-
   margin: 0 auto;
-
   color: #888;
-
   line-height: 1.8;
 }
 
 .contact-buttons {
   display: flex;
-
   justify-content: center;
-
   gap: 15px;
-
   margin-top: 35px;
 }
 
 @media (max-width: 500px) {
-
   .contact-buttons {
     flex-direction: column;
-
     align-items: center;
   }
 
@@ -917,21 +905,15 @@ color: white;
 
 .footer-content {
   max-width: 1150px;
-
   margin: auto;
-
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   gap: 30px;
 }
 
 .footer-logo {
   font-size: 22px;
-
   font-weight: 700;
 }
 
@@ -941,23 +923,18 @@ color: white;
 
 .footer-content p {
   color: #666;
-
   margin-top: 8px;
-
   font-size: 14px;
 }
 
 .footer-links {
   display: flex;
-
   gap: 25px;
 }
 
 .footer-links a {
   color: #888;
-
   font-size: 14px;
-
   transition: 0.3s;
 }
 
@@ -967,19 +944,12 @@ color: white;
 
 .footer-bottom {
   max-width: 1150px;
-
   margin: 40px auto 0;
-
   padding-top: 20px;
-
   border-top: 1px solid #1c1c1c;
-
   display: flex;
-
   justify-content: space-between;
-
   color: #555;
-
   font-size: 13px;
 }
 
