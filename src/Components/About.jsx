@@ -1,72 +1,46 @@
-import React from "react";
+import Reveal from "./Reveal";
+
 function About() {
+  const highlights = [
+    { title: "Education", text: "Bachelor of Engineering in Computer Science and Engineering" },
+    { title: "Primary Focus", text: "Full stack development with clean UI and resilient backend architecture" },
+    { title: "Problem Solving", text: "DSA, LeetCode, and analytical thinking sharpened through daily practice" },
+    { title: "Currently Learning", text: "React, Django, Python, SQL, and modern development workflows" },
+  ];
+
   return (
     <section id="about" className="about section">
-      <div className="about-heading">
-        <p className="section-label">ABOUT ME</p>
-        <h2>
-          Turning ideas into
-          <span> real applications.</span>
-        </h2>
-      </div>
-      <div className="about-content">
-        <div className="about-text">
-
-          <p>
-            I'm Santhosh GP, a Computer Science and Engineering
-            student and aspiring Full Stack Developer.
-          </p>
-
-          <p>
-            I enjoy building web applications and solving
-            programming problems. I'm continuously improving
-            my skills in React, JavaScript, Python, Django,
-            SQL and Data Structures & Algorithms.
-          </p>
-
-          <p>
-            My goal is to become a strong software developer
-            and build useful, scalable and user-friendly
-            applications.
-          </p>
-
+      <Reveal>
+        <div className="about-heading">
+          <p className="section-label">ABOUT ME</p>
+          <h2>
+            Turning ideas into <span>real applications</span>.
+          </h2>
         </div>
+      </Reveal>
 
+      <div className="about-content">
+        <Reveal className="about-text" direction="left">
+          <p>
+            I’m Santhosh GP, a Computer Science and Engineering student with a growing focus on building polished and practical web applications.
+          </p>
+          <p>
+            I enjoy turning ideas into usable software, refining interfaces, and strengthening backend logic through continuous learning in React, JavaScript, Python, Django, SQL, and Data Structures & Algorithms.
+          </p>
+          <p>
+            My goal is to grow into a strong software engineer who creates user-friendly, scalable, and meaningful products.
+          </p>
+        </Reveal>
 
         <div className="about-info">
-
-          <div className="info-card">
-            <h3>Education</h3>
-            <p>
-           Bachelor of Engineering in Computer Science and Engineering
-            </p>
-          </div>
-
-          <div className="info-card">
-            <h3>Focus</h3>
-            <p>
-            software devloveper
-            </p>
-          </div>
-
-          <div className="info-card">
-            <h3>Problem Solving</h3>
-            <p>
-              DSA & LeetCode
-            </p>
-          </div>
-
-          <div className="info-card">
-            <h3>Currently Learning</h3>
-            <p>
-             Python,JavaScript,HTML,CSS,Django, React & Advanced Development
-            </p>
-          </div>
-
+          {highlights.map((item, index) => (
+            <Reveal key={item.title} className="info-card" delay={0.05 * index} direction="right">
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </Reveal>
+          ))}
         </div>
-
       </div>
-
     </section>
   );
 }

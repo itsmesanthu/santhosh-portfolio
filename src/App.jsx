@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
@@ -9,6 +10,15 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 function App() {
+  const [showBackTop, setShowBackTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setShowBackTop(window.scrollY > 520);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="portfolio">
       <Navbar />
@@ -21,6 +31,9 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <a href="#home" className={`back-to-top ${showBackTop ? "visible" : ""}`} aria-label="Back to top">
+        ↑
+      </a>
     </div>
   );
 }
