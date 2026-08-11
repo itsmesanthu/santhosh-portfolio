@@ -9,7 +9,7 @@ function Projects() {
         "A secure web experience focused on safe data handling, responsive interfaces, and strong backend fundamentals for cybersecurity-minded applications.",
       tech: "Python • HTML • CSS • JavaScript",
       github: "https://github.com/itsmesanthu",
-      demo: "https://github.com/itsmesanthu",
+      demo: "https://quantum-resistant-cybersecurity-systems.onrender.com",
     },
     {
       title: "Online Shopping Website",
