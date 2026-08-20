@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import developer from "../assets/developer.png";
+import resume from "../assets/Santhosh_GP_Resume.pdf";
 
 function Hero() {
   return (
@@ -20,13 +21,23 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href="#projects" className="btn primary">
-            View My Work
-          </a>
-          <a href="#contact" className="btn secondary">
-            Contact Me
-          </a>
-        </div>
+  <a href="#projects" className="btn primary">
+    View My Work
+  </a>
+
+  <a href="#contact" className="btn secondary">
+    Contact Me
+  </a>
+
+  <a
+    href={resume}
+    target="_blank"
+    rel="noreferrer"
+    className="btn secondary"
+  >
+    My Resume
+  </a>
+</div>
 
         <div className="hero-socials">
           <a href="https://github.com/itsmesanthu" target="_blank" rel="noreferrer">
